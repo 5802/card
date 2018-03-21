@@ -1,0 +1,71 @@
+.box
+{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: bisque;
+    border: 1px solid black;
+    margin: 50px auto;
+    display: flex;
+    align-items: center; 
+    
+    
+}
+.image
+{
+        position: absolute;
+        width: 350px;
+        height: 100%;
+        background: url(img5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(100%);
+        transition: .3s all linear;
+        
+}
+.text
+{
+    
+    display: block;
+    position: absolute;
+    color: white;
+    font-family: fantasy;
+    text-transform: uppercase;
+    transition: 1s all linear;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: .5px;
+    opacity: 0;
+}
+.box:hover .image
+{
+    filter: grayscale(0%);
+    transition: .5s all ease;
+}
+
+
+.box:hover .text
+{
+    margin-left: 50px;
+    text-shadow: 0 0 20px black;
+    opacity: 1;
+    transition: 1s all linear;
+  
+}
+.subtitle
+{
+    visibility: hidden;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 150px;  
+    position: absolute;
+    color: blue;
+    background-color: azure;
+}
+.box:hover .subtitle
+{
+    visibility: visible;
+    transition: 1s all linear;
+    margin-top: 40px;
+}
